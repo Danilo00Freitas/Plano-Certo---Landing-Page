@@ -148,36 +148,54 @@ body {
 
 .card-text {
     color: aliceblue;
-    font-size: 0.95em; /* Tamanho de fonte reduzido */
+    font-size: 0.95em; 
     line-height: 1.6;
 }
 
-/* Ajuste para garantir que o footer se ajuste ao conteúdo */
 main {
-    flex-grow: 1; /* Faz com que o conteúdo principal ocupe o espaço disponível */
+    flex-grow: 1; 
 }
 
 
-/* Estilo para os indicadores do carrossel */
+/* CARROSSEL */
+
+.carousel-inner {
+    position: relative;
+}
+
 .carousel-indicators {
-    bottom: -30px;
+    bottom: -50px;
 }
 
 .carousel-indicators button {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #00374B;
-    border: 2px solid #EAD392;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 30px; /* Ajuste a largura do botão */
+    height: 6px; /* Ajuste a altura para formar um traço reto */
+    border-radius: 0; /* Retira o arredondamento, tornando o botão reto */
+    background-color: rgba(0, 55, 75, 0.6); /* Fundo transparente com cor escura para melhor visibilidade */
+    border: none; /* Remove a borda */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
 .carousel-indicators button.active {
-    background-color: #EAD392;
+    background-color: #EAD392; /* Cor do botão ativo */
 }
 
 .carousel-indicators button:hover {
     transform: scale(1.2);
+    background-color: rgba(0, 55, 75, 0.8); /* Fundo mais opaco no hover */
+}
+
+.carousel-indicators button::before {
+    content: ''; /* Adiciona um "fundo" antes do botão */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00374B; /* Cor de fundo dos botões */
+    border-radius: 4px; /* Arredonda levemente os cantos */
+    z-index: -1; /* Coloca o fundo atrás do botão */
 }
 
 /* Ajuste do layout do texto dentro do carrossel */
