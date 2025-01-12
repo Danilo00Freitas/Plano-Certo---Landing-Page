@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Garantir que o corpo ocupe 100% da largura */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
 /* Estilo da navbar */
 .custom-navbar {
     background-color: #488B9B;
@@ -23,13 +33,12 @@
     padding: 0;
     position: relative;
     min-height: 50px;
-    z-index: 10; /
+    z-index: 10; 
 }
 
 .navbar-nav a {
     color: aliceblue;
     text-decoration: none;
-    padding: 12px 25px; /* Aumentando o espaço para tornar o texto mais visível */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,13 +46,12 @@
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, border-bottom 0.3s ease;
     position: relative;
     font-family: "Campton SemiBold", sans-serif; /* Fonte personalizada */
-    font-size: 14px; /* Ajuste do tamanho da fonte */
+    font-size: 16px; /* Ajuste do tamanho da fonte */
 }
 
 .navbar-nav a:hover {
     background-color: #00374B;
     color: #EAD392; /* Cor do texto no hover */
-    transform: scale(1.1);
 }
 
 /* Efeito de "vazamento" do item selecionado */
@@ -144,51 +152,7 @@
     line-height: 1.6;
 }
 
-/* Rodapé */
-.container-footer {
-    background-color: #488B9B;
-    padding: 20px 0; /* Ajuste para garantir que o padding seja uniforme */
-    width: auto; /* Faz o footer ocupar toda a largura disponível */
-    position: relative;
-    bottom: 0;
-    left: 0; /* Garante que o footer comece do lado esquerdo */
-    display: flex;
-    justify-content: center; /* Centraliza o conteúdo do footer */
-}
-
-/* Container interno que limita a largura do conteúdo */
-.container-footer-content {
-    max-width: 1200px; /* Limita a largura do conteúdo */
-    width: 100%; /* Garante que a largura do conteúdo ocupe toda a área disponível até o limite de max-width */
-    padding: 0 20px; /* Adiciona padding lateral */
-}
-
-.container-footer p {
-    margin: 0;
-    color: white;
-    font-size: 14px; /* Ajusta o tamanho da fonte para melhorar a legibilidade */
-}
-
-.container-footer p:not(:last-child) {
-    margin-bottom: 8px; /* Adiciona espaçamento entre os parágrafos */
-}
-
-.container-footer p a {
-    color: white;
-    text-decoration: none;
-}
-
-.container-footer p a:hover {
-    text-decoration: underline;
-}
-
 /* Ajuste para garantir que o footer se ajuste ao conteúdo */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
 main {
     flex-grow: 1; /* Faz com que o conteúdo principal ocupe o espaço disponível */
 }
@@ -233,4 +197,27 @@ main {
 /* Botão do carrossel */
 .carousel-inner .btn-custom {
     margin-top: 15px;
+}
+
+.row {
+    padding-top: 2.5px;
+    padding-bottom: 5px;
+}
+
+/* Estilos do footer */
+.bg-footer {
+    background-color: #488B9B /* cor de fundo personalizada */
+}
+
+.footer p {
+    color: #ffffff; /* cor do texto */
+}
+
+.footer a {
+    color: #ffffff; /* cor do link */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline; /* efeito de hover para links */
 }
