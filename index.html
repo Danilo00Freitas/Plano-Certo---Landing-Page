@@ -32,63 +32,122 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg custom-navbar">
-        <div class="container px-5 d-flex align-items-center">
-          <img src="assets/images/logo.png" alt="Logo" class="nav-bar-logo" />
-      
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Alternar navegação"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#!">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#!">Quem somos</a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#!">Produtos</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#!">Fale conosco</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
+<nav class="navbar navbar-expand-md custom-navbar">
+    <div class="container px-5 d-flex align-items-center">
+      <img src="assets/images/logo.png" alt="Logo" class="nav-bar-logo" />
+  
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Alternar navegação"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#!">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!">Quem somos</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#!">Produtos</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!">Fale conosco</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
     <!-- Page Content -->
     <div class="container px-4 px-lg-5">
       <!-- Heading Row -->
       <div class="row gx-4 gx-lg-5 align-items-center my-5">
-        <div class="col-lg-7">
-            <div class="imag-hover">
-                <img
-            class="img-fluid rounded mb-4 mb-lg-0"
-            src="/assets/images/landindPageMainImg.png"
-            alt="Imagem de exemplo"
-          />
+        <!-- Carrossel -->
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+  
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+          <div class="col-lg-7">
+            <div class="img-hover">
+              <img
+                class="img-fluid rounded mb-4 mb-lg-0"
+                src="/assets/images/landindPageMainImg.png"
+                alt="Imagem de exemplo"
+              />
             </div>
-          
-        </div>
-        <div class="col-lg-5">
-          <h1 class="font-weight-light">Plano Certo <br>Corretora de Seguros</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-            neque consectetur delectus corrupti dolores. Dignissimos molestiae
-            quibusdam at fugiat? Repellat architecto placeat vel rerum ea a quia
-            optio officiis dolor?
-          </p>
-          <a class="btn btn-custom" href="#!">Entrar em contato!</a>
+          </div>
+          <div class="col-lg-5">
+            <h1 class="font-weight-light">
+              Plano Certo <br />Corretora de Seguros
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem neque consectetur delectus corrupti dolores.
+            </p>
+            <a class="btn btn-custom" href="#!">Entrar em contato!</a>
+          </div>
         </div>
       </div>
+  
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+          <div class="col-lg-7">
+            <div class="img-hover">
+              <img
+                class="img-fluid rounded mb-4 mb-lg-0"
+                src="/assets/images/landindPageMainImg.png"
+                alt="Outro Slide"
+              />
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <h1 class="font-weight-light">Outro Plano <br />Descrição</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus doloribus natus harum minima rerum explicabo.
+            </p>
+            <a class="btn btn-custom" href="#!">Saiba mais!</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+          <div class="col-lg-7">
+            <div class="img-hover">
+              <img
+                class="img-fluid rounded mb-4 mb-lg-0"
+                src="/assets/images/landindPageMainImg.png"
+                alt="Mais Um Slide"
+              />
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <h1 class="font-weight-light">Outro Título</h1>
+            <p>
+              Aqui você pode adicionar outro conteúdo relacionado ao seu serviço ou produto.
+            </p>
+            <a class="btn btn-custom" href="#!">Saiba mais!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
       <!-- Call to Action -->
       <div class="card my-5 py-4 text-center">
@@ -154,21 +213,20 @@
     </div>
 
     <!-- Footer -->
-    <footer class="container-footer py-5">
-      <div class="container-footer px-4 px-lg-5">
-        <p class="m-0 text-center text-white">
-          PLANO CERTO ADM CORRETORA DE SEGUROS LTDA
-        </p>
-        <p class="m-0 text-center text-white">
-          Rua Desembargador Rafael Fleury Ferraz de Sampaio , 213 - 05171-580 -
-          São Paulo/SP
-        </p>
-        <p class="m-0 text-center text-white">
-          (11) 2925 - 4500(11) 2476 - 2646(11) 98314-4586
-        </p>
-        <p class="m-0 text-center text-white">planocertoseguros@uol.com.br</p>
-      </div>
-    </footer>
+    <footer class="container-footer">
+        <div class="container-footer-content">
+          <p class="m-0 text-center text-white">
+            PLANO CERTO ADM CORRETORA DE SEGUROS LTDA
+          </p>
+          <p class="m-0 text-center text-white">
+            Rua Desembargador Rafael Fleury Ferraz de Sampaio, 213 - 05171-580 - São Paulo/SP
+          </p>
+          <p class="m-0 text-center text-white">
+            (11) 2925 - 4500 | (11) 2476 - 2646 | (11) 98314-4586
+          </p>
+          <p class="m-0 text-center text-white">planocertoseguros@uol.com.br</p>
+        </div>
+      </footer>
 
     <!-- Bootstrap JS -->
     <script

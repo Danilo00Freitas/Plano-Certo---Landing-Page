@@ -14,6 +14,7 @@
     margin-right: 20px;
     width: 250px;
     height: auto;
+    max-width: 100%;
 }
 
 .navbar-nav {
@@ -21,24 +22,27 @@
     list-style: none;
     padding: 0;
     position: relative;
-    height: 7vh; /* Define a altura da lista de navegação */
+    min-height: 50px;
+    z-index: 10; /
 }
 
 .navbar-nav a {
     color: aliceblue;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 12px 25px; /* Aumentando o espaço para tornar o texto mais visível */
     display: flex;
-    align-items: center; /* Centraliza verticalmente o texto */
-    justify-content: center; /* Centraliza horizontalmente o texto */
-    height: 100%; /* Garante que os links ocupem toda a altura da lista de navegação */
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, border-bottom 0.3s ease;
     position: relative;
+    font-family: "Campton SemiBold", sans-serif; /* Fonte personalizada */
+    font-size: 14px; /* Ajuste do tamanho da fonte */
 }
 
 .navbar-nav a:hover {
     background-color: #00374B;
-    color: #fff;
+    color: #EAD392; /* Cor do texto no hover */
     transform: scale(1.1);
 }
 
@@ -50,7 +54,7 @@
     left: 0;
     width: 0;
     height: 4px;
-    background-color: #fff;
+    background-color: #EAD392; /* Cor da linha de seleção */
     transition: width 0.3s ease;
 }
 
@@ -58,11 +62,16 @@
     width: 100%;
 }
 
-/* Início da formatação da imagem */
+/* Formatação das imagens do carrossel */
 .img-hover {
     position: relative;
     display: inline-block;
     overflow: hidden;
+}
+
+.nav-item {
+    width: 150px;
+    height: 100%;
 }
 
 .img-hover img {
@@ -73,12 +82,13 @@
     transform: scale(1.1);
     filter: brightness(0.8);
 }
-/* Fim da formatação da imagem */
 
 /* Estilo do título */
 .font-weight-light {
     display: flex;
-    font-size: x-large;
+    font-family: "Campton SemiBold", sans-serif;
+    font-size: 29px; /* Tamanho da fonte no carrossel */
+    color: #00374B;
 }
 
 /* Botões personalizados */
@@ -91,6 +101,8 @@
     display: inline-block;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: "Gadugi", sans-serif; /* Fonte personalizada */
+    font-size: 16px; /* Ajuste do tamanho da fonte */
 }
 
 .btn-custom:hover {
@@ -128,13 +140,97 @@
 
 .card-text {
     color: aliceblue;
-    font-size: 1em;
+    font-size: 0.95em; /* Tamanho de fonte reduzido */
     line-height: 1.6;
 }
 
 /* Rodapé */
 .container-footer {
     background-color: #488B9B;
-    padding: 20px;
-    text-align: center;
+    padding: 20px 0; /* Ajuste para garantir que o padding seja uniforme */
+    width: auto; /* Faz o footer ocupar toda a largura disponível */
+    position: relative;
+    bottom: 0;
+    left: 0; /* Garante que o footer comece do lado esquerdo */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo do footer */
+}
+
+/* Container interno que limita a largura do conteúdo */
+.container-footer-content {
+    max-width: 1200px; /* Limita a largura do conteúdo */
+    width: 100%; /* Garante que a largura do conteúdo ocupe toda a área disponível até o limite de max-width */
+    padding: 0 20px; /* Adiciona padding lateral */
+}
+
+.container-footer p {
+    margin: 0;
+    color: white;
+    font-size: 14px; /* Ajusta o tamanho da fonte para melhorar a legibilidade */
+}
+
+.container-footer p:not(:last-child) {
+    margin-bottom: 8px; /* Adiciona espaçamento entre os parágrafos */
+}
+
+.container-footer p a {
+    color: white;
+    text-decoration: none;
+}
+
+.container-footer p a:hover {
+    text-decoration: underline;
+}
+
+/* Ajuste para garantir que o footer se ajuste ao conteúdo */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1; /* Faz com que o conteúdo principal ocupe o espaço disponível */
+}
+
+
+/* Estilo para os indicadores do carrossel */
+.carousel-indicators {
+    bottom: -30px;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #00374B;
+    border: 2px solid #EAD392;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.carousel-indicators button.active {
+    background-color: #EAD392;
+}
+
+.carousel-indicators button:hover {
+    transform: scale(1.2);
+}
+
+/* Ajuste do layout do texto dentro do carrossel */
+.carousel-inner h1 {
+    font-family: "Campton SemiBold", sans-serif;
+    color: #00374B;
+    font-size: 29px;
+}
+
+.carousel-inner p {
+    font-family: "Gadugi", sans-serif;
+    font-size: 18px; /* Tamanho de fonte reduzido */
+    color: #00374B;
+    line-height: 1.6;
+}
+
+/* Botão do carrossel */
+.carousel-inner .btn-custom {
+    margin-top: 15px;
 }
