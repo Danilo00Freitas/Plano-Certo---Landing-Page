@@ -152,29 +152,6 @@ body {
     line-height: 1.6;
 }
 
-/* Centralizando os cards com espaçamento uniforme */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centraliza os cards horizontalmente */
-    gap: 30px; /* Controla o espaçamento entre os cards */
-}
-
-/* Definindo a largura dos cards */
-.col-md-4 {
-    flex: 1 1 30%; /* Faz com que cada card ocupe no mínimo 30% do espaço disponível */
-    max-width: 300px; /* Define um tamanho máximo para os cards */
-}
-
-/* Responsividade para dispositivos móveis */
-@media (max-width: 768px) {
-    .col-md-4 {
-        flex: 1 1 100%; /* Os cards ocuparão toda a largura em telas pequenas */
-        max-width: 100%;
-    }
-}
-
-
 main {
     flex-grow: 1; 
 }
@@ -262,3 +239,13 @@ main {
 .footer a:hover {
     text-decoration: underline; /* efeito de hover para links */
 }
+
+.info-div {
+    margin-top: 20px; /* ou qualquer outro estilo que deseje */
+    padding: 10px;
+  }
+  
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+  }
