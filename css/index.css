@@ -231,7 +231,8 @@ main {
 
 /* Estilos do footer */
 .bg-footer {
-    background-color: #488B9B /* cor de fundo personalizada */
+    background-color: #488B9B; /* cor de fundo personalizada */
+    margin-top: auto;
 }
 
 .footer p {
@@ -248,8 +249,7 @@ main {
 }
 
 .info-div {
-    margin-top: 20px; /* ou qualquer outro estilo que deseje */
-    padding: 10px;
+    margin-top: 50px; /* ou qualquer outro estilo que deseje */
   }
   
   .info-row {
