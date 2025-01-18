@@ -79,7 +79,7 @@ body {
 
 .nav-item {
     width: 150px;
-    height: 100%;
+    height: 85px;
 }
 
 .img-hover img {
@@ -117,6 +117,7 @@ body {
     background-color: #488B9B;
     border-color: #488B9B;
     transform: scale(1.05);
+    color: #EAD392;
 }
 
 /* Estilo do card */
@@ -145,6 +146,12 @@ body {
     font-size: 1.5em;
     margin-bottom: 10px;
 }
+
+
+.card-title:hover{
+    color: #EAD392;
+}
+
 
 .card-text {
     color: aliceblue;
