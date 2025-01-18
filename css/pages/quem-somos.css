@@ -256,3 +256,21 @@ main {
     display: flex;
     justify-content: space-between;
   }
+
+  /* Centralizar os itens do menu no modo mobile */
+@media (max-width: 768px) {
+    .navbar-nav {
+      text-align: center;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .navbar-collapse {
+      justify-content: center;
+    }
+  
+    .nav-item {
+      margin: 0.5rem 0; /* Espaçamento entre os itens no mobile */
+    }
+  }
+  
