@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Garantir que o corpo ocupe toda a altura da tela */
+    text-align: justify;
 }
 
 /* Estilo da navbar */
